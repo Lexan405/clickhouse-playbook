@@ -1,20 +1,16 @@
 ---
-collections:
-  - name: community.docker
-    version: "3.10.0"
-
 roles:
   - src: git@github.com:AlexeySetevoi/ansible-clickhouse.git
     scm: git
     version: "1.13"
     name: clickhouse
 
-  - src: git@github.com:aleksey/vector-role.git
+  - src: git@github.com:Lexan405/vector-role.git
     scm: git
-    version: "1.0.0"
+    version: "1.0.0"   
     name: vector-role
 
-  - src: git@github.com:aleksey/lighthouse-role.git
+  - src: git@github.com:Lexan405/lighthouse-role.git
     scm: git
-    version: "1.0.0"
+    version: "1.0.0"   
     name: lighthouse-role
