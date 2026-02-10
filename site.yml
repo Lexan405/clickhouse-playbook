@@ -1,0 +1,13 @@
+---
+- name: Deploy ClickHouse stack with monitoring tools
+  hosts: clickhouse_servers
+  become: true
+  roles:
+    - role: clickhouse
+      tags: clickhouse
+
+    - role: vector-role
+      tags: vector
+
+    - role: lighthouse-role
+      tags: lighthouse

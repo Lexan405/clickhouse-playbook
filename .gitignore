@@ -1,0 +1,7 @@
+*.retry
+*.log
+artifacts/
+secrets/
+vault-password.txt
+roles/
+collections/

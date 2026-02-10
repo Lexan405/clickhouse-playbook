@@ -1,0 +1,20 @@
+---
+# ClickHouse variables (для внешней роли AlexeySetevoi)
+clickhouse_packages:
+  - clickhouse-server
+  - clickhouse-client
+clickhouse_allow_remote_connections: true
+
+# Vector variables
+clickhouse_host: "{{ ansible_host }}"
+clickhouse_port: 8123
+clickhouse_database: "logs"
+clickhouse_table: "vector_logs"
+vector_include_containers:
+  - "clickhouse-server"
+
+# LightHouse variables
+lighthouse_version: "23.8.2"
+lighthouse_host: "0.0.0.0"
+lighthouse_port: 80
+clickhouse_native_port: 9000
